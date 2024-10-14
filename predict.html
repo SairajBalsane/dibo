@@ -1,0 +1,35 @@
+<!-- predict.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Diabetes - Diabetes Detection</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <nav>
+        <h2>Diabetes Detection</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2>Predict Diabetes</h2>
+        <p>Click the button below to get your diabetes prediction based on the entered patient data.</p>
+        <form id="predict-form">
+            <button type="submit">Get Prediction</button>
+        </form>
+        <div id="prediction-result" class="prediction-result" style="display: none;">
+            <h3>Your predicted result: <span id="result-text"></span></h3>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* css/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    background-image: url('../images/homepage-bg.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #004d80;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    display: inline-block;
+    margin: 0;
+    color: #FFEB3B;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFEB3B; /* Change color to match h2 */
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+    font-size: 1.1em; /* Slightly increase font size for better readability */
+}
+
+.content {
+    padding: 80px 20px 20px 20px; /* Add top padding to avoid overlap with fixed nav */
+}
+
+.homepage {
+    text-align: center;
+    background-size: cover;
+    padding: 100px 0;
+    color: white;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    text-decoration: none; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    font-size: 1.2em; 
+}
+
+.button:hover {
+    background-color: #45a049; 
+}
+
+.prediction-result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #f9fff9;
+}
+
+.prediction-result h3 {
+    color: #004d80;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

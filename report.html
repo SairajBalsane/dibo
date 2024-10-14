@@ -1,0 +1,32 @@
+<!-- report.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report - Diabetes Detection</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- jsPDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <nav>
+        <h2>Diabetes Detection</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2>Download Your Report</h2>
+        <p>Your latest diagnosis report is ready for download.</p>
+        <button id="download-report" class="button">Download PDF Report</button>
+    </div>
+</body>
+</html>
